@@ -1,3 +1,12 @@
+const player = document.getElementById('player');
+const scoreElement = document.getElementById('score');
+const gameContainer = document.querySelector('.game-container');
+
+let playerX = 0;
+let playerY = 0;
+let score = 0;
+let enemies = [];
+
 // Oyuncu kontrolü
 document.addEventListener('keydown', (e) => {
     const speed = 10;
